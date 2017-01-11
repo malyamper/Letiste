@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="391.0" prefWidth="533.0" stylesheets="@CSSMenu.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="letiste.FXMLMenuController">
+   <children>
+      <ImageView fx:id="ImageView" fitHeight="403.0" fitWidth="540.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/uvod.png" />
+         </image></ImageView>
+      <Label alignment="TOP_CENTER" contentDisplay="TOP" layoutX="19.0" layoutY="3.0" prefHeight="105.0" prefWidth="505.0" stylesheets="@CSSMenu.css" text="A I R P O R T" textFill="#8996ea">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <Button fx:id="novaHra" layoutX="145.0" layoutY="108.0" mnemonicParsing="false" onAction="#start" prefHeight="77.0" prefWidth="253.0" stylesheets="@CSSMenu.css" text="Nová Hra" textFill="WHITE">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="nejlepsiVysledky" layoutX="145.0" layoutY="202.0" mnemonicParsing="false" onAction="#vysledky" prefHeight="77.0" prefWidth="253.0" text="Nejlepší výsledky" textFill="WHITE">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ukoncit" layoutX="145.0" layoutY="302.0" mnemonicParsing="false" onAction="#ukoncit" prefHeight="77.0" prefWidth="253.0" text="Ukončit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

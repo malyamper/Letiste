@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="565.0" prefWidth="412.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="airport.FXMLDocumentController">
+   <children>
+      <Label contentDisplay="TOP" layoutX="74.0" layoutY="14.0" prefHeight="105.0" prefWidth="265.0" text="Airport">
+         <font>
+            <Font name="System Bold" size="72.0" />
+         </font>
+      </Label>
+      <Button fx:id="novaHra" layoutX="89.0" layoutY="163.0" mnemonicParsing="false" onAction="#start" prefHeight="77.0" prefWidth="235.0" text="Nová Hra">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Button>
+      <Button fx:id="nejlepsiVysledky" layoutX="89.0" layoutY="268.0" mnemonicParsing="false" prefHeight="77.0" prefWidth="235.0" text="Nejlepší výsledky">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+      <Button fx:id="ukoncit" layoutX="89.0" layoutY="368.0" mnemonicParsing="false" onAction="#ukoncit" prefHeight="77.0" prefWidth="235.0" text="Ukončit">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

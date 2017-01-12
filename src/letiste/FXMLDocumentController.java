@@ -67,7 +67,8 @@ public class FXMLDocumentController implements Initializable {
         
         TranslateTransition translateTransition = new TranslateTransition(Duration.millis(10000), image);
         translateTransition.setToX(-1400);
-        translateTransition.play();       
+        translateTransition.play();
+        //zkouska
     }
     
     private void pristan(ImageView image, int x, int y){

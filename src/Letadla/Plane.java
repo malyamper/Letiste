@@ -64,6 +64,7 @@ public class Plane {
         return palivo;
         
     }
+    
    
 
     void takeoff(int runway) {

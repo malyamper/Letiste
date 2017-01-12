@@ -1,19 +1,15 @@
-
 package Letadla;
 
 import javafx.scene.image.ImageView;
 import letiste.FXMLDocumentController;
 import letiste.Hra;
 
+public class MaleLetadlo extends Plane {
 
-public class MaleLetadlo extends Plane{
-    
-   private final byte velikost = 1;
-   private final int palivoMax = 52000;
-   ImageView obrazek = new ImageView("Images/planeV.png");
-    
-    
-    
+    private final byte velikost = 1;
+    private final int palivoMax = 52000;
+    private ImageView obrazek = new ImageView("Images/planeV.png");
+
     public void natankuj(int litry) {
         if ((getPalivo() + litry) <= palivoMax) {
             setPalivo(getPalivo() + litry);
@@ -21,10 +17,10 @@ public class MaleLetadlo extends Plane{
             //vyhodí chybu
         }
     }
-    
-          public void landing(int runway){
-          switch (runway){
-            case 9: 
+
+    public void landing(int runway) {
+        switch (runway) {
+            case 9:
                 x = 1400;
                 y = 0;
                 break;
@@ -40,10 +36,25 @@ public class MaleLetadlo extends Plane{
                 x = 0;
                 y = -1400;
                 break;
-                               
-    }
-                
-              FXMLDocumentController.instance.jed(obrazek, x, y);
 
+        }
+
+        FXMLDocumentController.instance.jed(obrazek, x, y);
+
+    }
+
+    public byte getVelikost() {
+        return velikost;
+    }
+
+    public int getPalivoMax() {
+        return palivoMax;
+    }
+
+    public ImageView getObrazek() {
+        return obrazek;
+    }
+    
+    
+    
 }
-          }

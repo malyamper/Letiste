@@ -53,7 +53,7 @@ public class FXMLDocumentController implements Initializable {
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-     
+       instance = this;
     }    
     
     public void pridejObrazek(ImageView obrazek, int x, int y){
@@ -63,12 +63,9 @@ public class FXMLDocumentController implements Initializable {
     }
     
     public void jed(ImageView image, int x, int y){
-        
-        
         TranslateTransition translateTransition = new TranslateTransition(Duration.millis(10000), image);
         translateTransition.setToX(-1400);
         translateTransition.play();
-        //zkouska
     }
     
     private void pristan(ImageView image, int x, int y){

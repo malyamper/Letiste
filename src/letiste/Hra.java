@@ -10,29 +10,32 @@ import javafx.scene.Parent;
 
 public class Hra {
     
-private static Hra instance = new Hra();
+private static Hra instance;
+
+private Port port;
+private LetadlaVeHre letadla;
 
 private Hra(){
     
 }
 public static Hra vratInstanci(){
-    return instance;
-}   
-
-
-Port port = new Port(); 
-LetadlaVeHre letadla = new LetadlaVeHre();  
+   if(instance == null){
+       instance = new Hra();
+   }
+   return instance;
+}    
 
                     
      public void novaHra(){
+     port = new Port();
      port.vytvorLetiste();
      run();
                
      }
      
      public void run(){
-      LetadlaVeHre letadlaveHre = new LetadlaVeHre(); 
-      letadlaveHre.noveLetadlo();
+      letadla = new LetadlaVeHre(); 
+      letadla.noveLetadlo();
       
      
       

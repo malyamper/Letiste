@@ -32,6 +32,7 @@ public class LetadlaVeHre {
         MaleLetadlo m = new MaleLetadlo();
         letadlaVeHre.add(m);
         pocetMalych++;
+        FXMLDocumentController.instance.pridejObrazek(m.getObrazek(), 1500, 150);
         m.landing(27);
     }
 
@@ -40,6 +41,7 @@ public class LetadlaVeHre {
         VelkeLetadlo m = new VelkeLetadlo();
         letadlaVeHre.add(m);
         pocetVelkych++;
+        FXMLDocumentController.instance.pridejObrazek(m.getObrazek(), 200, 200);
         m.landing(27);
 
     }

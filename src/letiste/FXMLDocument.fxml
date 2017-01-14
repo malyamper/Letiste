@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="Pane" minHeight="1080.0" minWidth="1518.0" prefHeight="1080.0" prefWidth="1614.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="letiste.FXMLDocumentController">
+   <children>
+      <MenuButton fx:id="menu" layoutX="1487.0" layoutY="1.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="25.0" prefWidth="126.0" text="Menu">
+        <items>
+          <MenuItem mnemonicParsing="false" text="Restartovat" />
+          <MenuItem mnemonicParsing="false" text="Pozastavit" />
+            <MenuItem fx:id="Konec" mnemonicParsing="false" onAction="#ukoncit" text="Ukončit" />
+        </items>
+         <font>
+            <Font size="22.0" />
+         </font>
+      </MenuButton>
+      <ImageView fx:id="plocha" fitHeight="1031.0" fitWidth="1387.0" layoutX="227.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../Images/airport.png" />
+         </image></ImageView>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="200.0" layoutX="2.0" layoutY="51.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="2.0" width="226.0" />
+      <Pane fx:id="canvas" layoutX="225.0" layoutY="51.0" prefHeight="1026.0" prefWidth="1387.0" />
+      <Label alignment="TOP_CENTER" layoutY="51.0" prefHeight="48.0" prefWidth="226.0" text="PŘISTÁNÍ" textAlignment="CENTER" textFill="RED">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label fx:id="cisloDrahy" layoutX="125.0" layoutY="159.0" prefHeight="48.0" prefWidth="74.0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <MenuButton fx:id="PristavaciDraha" layoutX="19.0" layoutY="109.0" mnemonicParsing="false" onAction="#handleButtonAction" prefHeight="44.0" prefWidth="198.0" text="Přistávací dráha">
+        <items>
+          <MenuItem fx:id="d27" mnemonicParsing="false" onAction="#set27" text="27" />
+          <MenuItem fx:id="d09" mnemonicParsing="false" onAction="#set09" text="09" />
+          <MenuItem fx:id="d36" mnemonicParsing="false" onAction="#set36" text="36" />
+          <MenuItem fx:id="d18" mnemonicParsing="false" onAction="#set18" text="18" />
+        </items>
+         <font>
+            <Font size="20.0" />
+         </font>
+      </MenuButton>
+      <Label fx:id="upozorneniPristani" alignment="CENTER" layoutX="14.0" layoutY="207.0" prefHeight="44.0" prefWidth="198.0" textFill="RED">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="150.0" fitWidth="200.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="433.0" layoutY="11.0" text="Letadel na ploše:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="228.0" layoutY="3.0" prefHeight="44.0" prefWidth="126.0" text="Odbaveno:" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="odbaveno" layoutX="362.0" layoutY="6.0" prefHeight="44.0" prefWidth="62.0" text="0" textFill="RED">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="letadelNaPlose" layoutX="618.0" layoutY="8.0" prefHeight="44.0" prefWidth="62.0" text="0">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label fx:id="volnychStojanku" layoutX="859.0" layoutY="9.0" prefHeight="44.0" prefWidth="62.0" text="14">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="664.0" layoutY="13.0" text="Volných stojánků:">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
